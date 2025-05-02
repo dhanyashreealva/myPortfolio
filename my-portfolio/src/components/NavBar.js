@@ -28,9 +28,9 @@ export const NavBar={} =>{
             </Navbar.Toggle> 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className={activeLink==='home' ?'active navbar-link':'navbar-link'}>Home</Nav.Link>
-            <Nav.Link href="#skills" className={activeLink==='skills' ?'active navbar-link':'navbar-link'}>Skills</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#home" className={activeLink==='home' ?'active navbar-link':'navbar-link'} onclick={()=> onUpdateActiveLink('home')}>Home</Nav.Link>
+            <Nav.Link href="#skills" className={activeLink==='skills' ?'active navbar-link':'navbar-link'} onclick={()=> onUpdateActiveLink('skills')}>Skills</Nav.Link>
+            <Nav.Link href="#projects"className={activeLink==='Projects' ?'active navbar-link':'navbar-link'} onclick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
             
           </Nav>
           <span className="navbar-text">
